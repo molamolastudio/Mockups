@@ -10,6 +10,12 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    @IBOutlet weak var displayProject: UITextField!
+    
+    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var btnAllProjects: UIButton!
+    @IBOutlet weak var btnCreateProject: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
