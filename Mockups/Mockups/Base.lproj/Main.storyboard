@@ -95,10 +95,11 @@
                     <connections>
                         <outlet property="btnAllProjects" destination="L5Y-mu-VEi" id="Pl7-AZ-wVQ"/>
                         <outlet property="btnCreateProject" destination="2HS-Kb-6aA" id="86n-GD-naX"/>
-                        <outlet property="btnCreateSession" destination="RXC-bM-3pq" id="Hhr-Tc-98v"/>
                         <outlet property="btnLogin" destination="pyi-1k-EOF" id="S13-ah-zr4"/>
+                        <outlet property="btnSession" destination="RXC-bM-3pq" id="O8S-wN-iEK"/>
                         <outlet property="displayProject" destination="oQx-qX-3cF" id="Vjn-nl-ve5"/>
                         <outlet property="displaySession" destination="UiH-C1-MSJ" id="nTV-NQ-nt3"/>
+                        <outlet property="displaySessionTitle" destination="iaW-5L-3Fl" id="D9i-mb-uVd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

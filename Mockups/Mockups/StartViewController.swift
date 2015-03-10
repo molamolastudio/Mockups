@@ -9,7 +9,8 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
+    @IBOutlet weak var displaySessionTitle: UITextField!
+    
     @IBOutlet weak var displayProject: UITextField!
     @IBOutlet weak var displaySession: UITextField!
     
@@ -17,9 +18,13 @@ class StartViewController: UIViewController {
     @IBOutlet weak var btnAllProjects: UIButton!
     @IBOutlet weak var btnCreateProject: UIButton!
     
-    @IBOutlet weak var btnCreateSession: UIButton!
+    @IBOutlet weak var btnSession: UIButton!
+    
+    let labelCreateSession = "Create A Session"
+    let labelStartTracking = "Start Tracking"
     
     let messageNoProjects = "You don't have any projects."
+    let messageNoSessions = "You don't have any sessions."
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,16 +50,32 @@ class StartViewController: UIViewController {
         // There is a project currently selected
         if let project = Data.selectedProject {
             displayProject.text = project.getDisplayName()
+            showSessionSection()
             
             if let session = Data.selectedSession {
                 displaySession.text = session.getDisplayName()
+                btnSession.titleLabel!.text = labelStartTracking
             } else {
-                
+                displaySession.text = messageNoSessions
+                btnSession.titleLabel!.text = labelCreateSession
             }
         } else {
             // Else, show the appropriate text.
             displayProject.text = messageNoProjects
+            hideSessionSection()
         }
+    }
+    
+    func showSessionSection() {
+        displaySessionTitle.hidden = false
+        displaySession.hidden = false
+        btnSession.hidden = false
+    }
+    
+    func hideSessionSection() {
+        displaySessionTitle.hidden = true
+        displaySession.hidden = true
+        btnSession.hidden = true
     }
 }
 
