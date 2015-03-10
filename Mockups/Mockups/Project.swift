@@ -9,6 +9,8 @@
 import Foundation
 
 class Project {
+    let stringWith = " with "
+    
     var name: String
     var animal: String
     var ethogram: String
@@ -29,5 +31,9 @@ class Project {
     
     func generateProjectId() -> String {
         return Constants.CodePrefixes.project + String(Data.projects.count)
+    }
+    
+    func getDisplayName() -> String {
+        return name + stringWith + animal
     }
 }

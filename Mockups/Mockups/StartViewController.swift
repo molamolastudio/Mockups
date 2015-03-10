@@ -16,9 +16,14 @@ class StartViewController: UIViewController {
     @IBOutlet weak var btnAllProjects: UIButton!
     @IBOutlet weak var btnCreateProject: UIButton!
     
+    let messageNoProjects = "You don't have any projects."
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        refreshView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +31,21 @@ class StartViewController: UIViewController {
         
     }
 
-
+    // Changes the visibility of UI elements based on state variables.
+    func refreshView() {
+        if Data.isLoggedIn {
+            btnLogin.hidden = true
+        } else {
+            btnLogin.hidden = false
+        }
+        
+        // There is a project currently selected
+        if let project = Data.selectedProject {
+            displayProject.text = project.getDisplayName()
+        } else {
+            // Else, show the appropriate text.
+            displayProject.text = messageNoProjects
+        }
+    }
 }
 
