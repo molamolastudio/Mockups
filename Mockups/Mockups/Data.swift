@@ -10,4 +10,5 @@ import Foundation
 
 struct Data {
     static var projects: [Project] = []
+    static var ethograms: [Ethogram] = []
 }

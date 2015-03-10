@@ -11,6 +11,8 @@
 		3205E7281AAE9B9D006F374D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E7271AAE9B9D006F374D /* Constants.swift */; };
 		3205E72A1AAEA58D006F374D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E7291AAEA58D006F374D /* Data.swift */; };
 		3205E72C1AAEA59F006F374D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E72B1AAEA59F006F374D /* Project.swift */; };
+		3205E72E1AAEA88B006F374D /* Ethogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E72D1AAEA88B006F374D /* Ethogram.swift */; };
+		3205E7301AAEA8E9006F374D /* BehaviourState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205E72F1AAEA8E9006F374D /* BehaviourState.swift */; };
 		320C9A2C1AA449F3006FC9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C9A2B1AA449F3006FC9D4 /* AppDelegate.swift */; };
 		320C9A2E1AA449F3006FC9D4 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C9A2D1AA449F3006FC9D4 /* StartViewController.swift */; };
 		320C9A311AA449F3006FC9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320C9A2F1AA449F3006FC9D4 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		3205E7271AAE9B9D006F374D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3205E7291AAEA58D006F374D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		3205E72B1AAEA59F006F374D /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		3205E72D1AAEA88B006F374D /* Ethogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ethogram.swift; sourceTree = "<group>"; };
+		3205E72F1AAEA8E9006F374D /* BehaviourState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviourState.swift; sourceTree = "<group>"; };
 		320C9A261AA449F3006FC9D4 /* Mockups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mockups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320C9A2A1AA449F3006FC9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320C9A2B1AA449F3006FC9D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,12 +97,14 @@
 			isa = PBXGroup;
 			children = (
 				320C9A2B1AA449F3006FC9D4 /* AppDelegate.swift */,
-				320C9A2D1AA449F3006FC9D4 /* StartViewController.swift */,
-				3205E7291AAEA58D006F374D /* Data.swift */,
-				3205E72B1AAEA59F006F374D /* Project.swift */,
-				320C9A2F1AA449F3006FC9D4 /* Main.storyboard */,
-				3205E7251AAE99C1006F374D /* ProjectFormViewController.swift */,
 				3205E7271AAE9B9D006F374D /* Constants.swift */,
+				3205E7291AAEA58D006F374D /* Data.swift */,
+				3205E72F1AAEA8E9006F374D /* BehaviourState.swift */,
+				3205E72D1AAEA88B006F374D /* Ethogram.swift */,
+				3205E72B1AAEA59F006F374D /* Project.swift */,
+				320C9A2D1AA449F3006FC9D4 /* StartViewController.swift */,
+				3205E7251AAE99C1006F374D /* ProjectFormViewController.swift */,
+				320C9A2F1AA449F3006FC9D4 /* Main.storyboard */,
 				320C9A321AA449F3006FC9D4 /* Images.xcassets */,
 				320C9A341AA449F3006FC9D4 /* LaunchScreen.xib */,
 				320C9A291AA449F3006FC9D4 /* Supporting Files */,
@@ -249,7 +255,9 @@
 				320C9A2E1AA449F3006FC9D4 /* StartViewController.swift in Sources */,
 				320C9A2C1AA449F3006FC9D4 /* AppDelegate.swift in Sources */,
 				3205E7281AAE9B9D006F374D /* Constants.swift in Sources */,
+				3205E7301AAEA8E9006F374D /* BehaviourState.swift in Sources */,
 				3205E72C1AAEA59F006F374D /* Project.swift in Sources */,
+				3205E72E1AAEA88B006F374D /* Ethogram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

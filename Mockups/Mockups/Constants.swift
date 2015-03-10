@@ -27,5 +27,6 @@ struct Constants {
     
     struct CodePrefixes {
         static let project = "P"
+        static let ethogram = "E"
     }
 }
