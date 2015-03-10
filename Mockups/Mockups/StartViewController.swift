@@ -28,10 +28,10 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshView()
     }
     
     override func viewDidAppear(animated: Bool) {
-        refreshView()
     }
 
     override func didReceiveMemoryWarning() {
