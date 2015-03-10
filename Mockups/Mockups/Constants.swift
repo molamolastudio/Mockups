@@ -24,4 +24,8 @@ struct Constants {
             static let cells = [CellType.TextOneLine]
         }
     }
+    
+    struct CodePrefixes {
+        static let project = "P"
+    }
 }
