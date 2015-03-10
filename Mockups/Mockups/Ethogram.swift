@@ -11,14 +11,14 @@ import Foundation
 class Ethogram {
     var name: String
     var createdTime: NSDate
-    var createdUser: String
+    var creator: String
     var behaviourStates: [BehaviourState] = []
     var id: String?
     
-    init(name: String, createdTime: NSDate, createdUser: String) {
+    init(name: String, createdTime: NSDate, creator: String) {
         self.name = name
         self.createdTime = createdTime
-        self.createdUser = createdUser
+        self.creator = creator
         self.id = generateEthogramId()
     }
     

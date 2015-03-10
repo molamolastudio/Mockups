@@ -15,19 +15,19 @@ class Project {
     var animal: String
     var ethogram: String
     var createdTime: NSDate
-    var createdUser: String
+    var creator: User
     var id: String?
-    var members: [String] = []
+    var members: [User] = []
     var sessions: [Session] = []
     
-    init(name: String, animal: String, ethogram: String, createdTime: NSDate, createdUser: String) {
+    init(name: String, animal: String, ethogram: String, createdTime: NSDate, creator: User) {
         self.name = name
         self.animal = animal
         self.ethogram = ethogram
         self.createdTime = createdTime
-        self.createdUser = createdUser
+        self.creator = creator
         self.id = generateProjectId()
-        self.members.append(createdUser)
+        self.members.append(creator)
     }
     
     func generateProjectId() -> String {
