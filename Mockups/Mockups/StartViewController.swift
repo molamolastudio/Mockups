@@ -11,10 +11,13 @@ import UIKit
 class StartViewController: UIViewController {
 
     @IBOutlet weak var displayProject: UITextField!
+    @IBOutlet weak var displaySession: UITextField!
     
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnAllProjects: UIButton!
     @IBOutlet weak var btnCreateProject: UIButton!
+    
+    @IBOutlet weak var btnCreateSession: UIButton!
     
     let messageNoProjects = "You don't have any projects."
     

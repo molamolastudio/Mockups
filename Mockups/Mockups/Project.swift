@@ -18,6 +18,7 @@ class Project {
     var createdUser: String
     var id: String?
     var members: [String] = []
+    var sessions: [Session] = []
     
     init(name: String, animal: String, ethogram: String, createdTime: NSDate, createdUser: String) {
         self.name = name

@@ -12,6 +12,7 @@ struct Data {
     static var isLoggedIn = false
     
     static var selectedProject: Project? = nil
+    static var selectedSession: Session? = nil
     
     static var projects: [Project] = []
     static var ethograms: [Ethogram] = []
