@@ -45,6 +45,12 @@ class StartViewController: UIViewController {
         // There is a project currently selected
         if let project = Data.selectedProject {
             displayProject.text = project.getDisplayName()
+            
+            if let session = Data.selectedSession {
+                displaySession.text = session.getDisplayName()
+            } else {
+                
+            }
         } else {
             // Else, show the appropriate text.
             displayProject.text = messageNoProjects

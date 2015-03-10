@@ -31,10 +31,19 @@ class Project {
     }
     
     func generateProjectId() -> String {
-        return Constants.CodePrefixes.project + String(Data.projects.count)
+        return Constants.CodePrefixes.project + String(Data.projects.count + 1)
     }
     
     func getDisplayName() -> String {
         return name + stringWith + animal
+    }
+    
+    func getIndexOfSession(session: Session) -> Int? {
+        for var i = 0; i < sessions.count; i++ {
+            if sessions[i] == session {
+                return i
+            }
+        }
+        return nil
     }
 }

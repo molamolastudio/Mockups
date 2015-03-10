@@ -23,6 +23,6 @@ class Ethogram {
     }
     
     func generateEthogramId() -> String {
-        return Constants.CodePrefixes.ethogram + String(Data.ethograms.count)
+        return Constants.CodePrefixes.ethogram + String(Data.ethograms.count + 1)
     }
 }
